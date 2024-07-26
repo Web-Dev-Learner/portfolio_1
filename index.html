@@ -41,13 +41,18 @@
             <div class="headings">
                 <h3 class="greet-heading">Hello, I'm</h3>
                 <h1 class="my-heading">Shrinedhi.M.R</h1>
-                <h4 class="sub-heading">
-                    A Software Engineer with 3 years of Experience.
-                </h4>
+                <h4 class="sub-heading">A Software Engineer with 3 years of Experience</h4>
+                <p class="skills">React | JavaScript | Node.js | Python</p>
             </div>
             <div class="intro-buttons">
-                <button class="btn common-btn">Hire Me</button>
-                <button class="btn ghost-btn">Get Resume</button>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <div style="flex: 1;">
+                        
+                        <button class="btn common-btn" onclick="window.location.href='#contact'">Hire Me</button>
+                        <button class="btn ghost-btn" onclick="window.open('path/to/your-resume.pdf', '_blank')">Get Resume</button>
+                    </div>
+                    <img align="right" width="370" height="290" src="https://camo.githubusercontent.com/3612ee9ed74410f8215009e743bde46d2bd74b96bc330563604211dc5f35d4b1/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f323730343431342f73637265656e73686f74732f373436363930332f6d656469612f62303861623537363331366264343538326665663138396634373163643965352e676966" />
+                </div>
             </div>
         </div>
     </section>
@@ -57,31 +62,11 @@
         <div class="about-text">
             <h1 class="my-heading">About Me</h1>
             <p class="lead-para">
-                GeeksforGeeks is a leading platform
-                that provides computer science
-                resources and coding challenges for
-                programmers and technology
-                enthusiasts, along with interview
-                and exam preparations for upcoming
-                aspirants. With a strong emphasis on
-                enhancing coding skills and knowledge,
-                it has become a trusted destination
-                for over 12 million plus registered
-                users worldwide. The platform offers
-                a vast collection of tutorials, practice
-                problems, interview tutorials, articles,
-                and courses, covering various domains
-                of computer science.
+                I am a pre-final year student pursuing a BTech in Information Technology. I have a strong passion for frontend development and enjoy solving problems using Python. 
+                With a focus on building efficient and scalable web applications, I strive to continuously improve my skills and stay updated with the latest industry trends.
             </p>
             <p>
-                Our exceptional mentors hailing from top
-                colleges & organizations have the
-                ability to guide you on a journey from
-                the humble beginnings of coding to
-                the pinnacle of expertise. Under their
-                guidance watch your skills flourish
-                as we lay the foundation and help you
-                conquer the world of coding.
+                Throughout my academic and professional journey, I have gained experience in various technologies and frameworks, enabling me to develop comprehensive solutions for complex problems. I am eager to contribute my knowledge and skills to impactful projects and collaborate with like-minded professionals.
             </p>
         </div>
         <div class="about-image">
@@ -172,15 +157,17 @@
             <h1 class="my-heading text-center">Certificates</h1>
         </div>
         <div class="certificates-content">
-            <div class="certificate-item">
+            <div class="certificates-item">
+                <img src="./Images/certificate1.jpg" alt="Certificate 1 Image">
                 <h3>Certificate 1</h3>
-                <p>Description: This certificate was awarded for completing XYZ course.</p>
-                <a href="https://certificate-link.com" class="btn common-btn" target="_blank">View Certificate</a>
+                <p>Certificate 1 description goes here. Explain the details of the certificate.</p>
+                <a href="https://certificate1-link.com" class="btn common-btn" target="_blank">View Certificate</a>
             </div>
-            <div class="certificate-item">
+            <div class="certificates-item">
+                <img src="./Images/certificate2.jpg" alt="Certificate 2 Image">
                 <h3>Certificate 2</h3>
-                <p>Description: This certificate was awarded for completing ABC course.</p>
-                <a href="https://certificate-link.com" class="btn common-btn" target="_blank">View Certificate</a>
+                <p>Certificate 2 description goes here. Explain the details of the certificate.</p>
+                <a href="https://certificate2-link.com" class="btn common-btn" target="_blank">View Certificate</a>
             </div>
         </div>
     </section>
@@ -191,23 +178,26 @@
             <h1 class="my-heading text-center">Contact Me</h1>
         </div>
         <div class="contact-content">
-            <form action="https://example.com/submit" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn common-btn">Send Message</button>
-            </form>
+            <div class="contact-form">
+                <form action="path/to/your-form-handler" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit" class="btn common-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:shrinedhi@example.com">shrinedhi@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/shrinedhi" target="_blank">linkedin.com/in/shrinedhi</a></p>
+                <p>GitHub: <a href="https://github.com/Web-Dev-Learner" target="_blank">github.com/Web-Dev-Learner</a></p>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Shrinedhi.M.R. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
     <script src="script.js"></script>
 </body>
 
