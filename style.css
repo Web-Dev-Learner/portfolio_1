@@ -4,13 +4,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #eae3e3;
+    color: #be1f1f;
 }
 
 /* Header styles */
 .header {
-    background-color: #333;
+    background-color: #240d0d;
     color: #fff;
     padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -29,6 +34,7 @@ body {
 
 .hamburger {
     display: none;
+    cursor: pointer;
 }
 
 .menu-list {
@@ -46,6 +52,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s;
 }
 
 .links:hover {
@@ -61,52 +68,76 @@ body {
     align-items: center;
     color: #fff;
     text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .intro {
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .intro-buttons {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.common-btn, .ghost-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
 }
 
 .common-btn {
     background-color: #ff4081;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-right: 10px;
 }
 
 .ghost-btn {
     background-color: transparent;
     color: #ff4081;
     border: 2px solid #ff4081;
-    padding: 8px 18px;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
-.common-btn:hover,
-.ghost-btn:hover {
+.common-btn:hover, .ghost-btn:hover {
     opacity: 0.8;
 }
 
 /* Section styles */
 section {
     padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .my-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
+    color: #240d0d;
 }
 
 .text-center {
     text-align: center;
+}
+
+p {
+    line-height: 1.6;
 }
 
 /* About section styles */
@@ -134,16 +165,22 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .project-item {
     flex: 1;
-    max-width: 48%;
+    min-width: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
 }
 
 .project-item img {
@@ -158,11 +195,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .education-item {
     flex: 1;
-    max-width: 48%;
+    min-width: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -175,11 +213,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .experience-item {
     flex: 1;
-    max-width: 48%;
+    min-width: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -199,11 +238,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.certificate-item {
+.certificates-item {
     flex: 1;
-    max-width: 48%;
+    min-width: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
@@ -221,18 +261,29 @@ section {
 .contact-content form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-.contact-content input,
-.contact-content textarea {
+.contact-content input, .contact-content textarea {
     padding: 10px;
-    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .contact-content button {
     align-self: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #240d0d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.contact-content button:hover {
+    opacity: 0.8;
 }
 
 /* Footer section styles */
@@ -241,4 +292,29 @@ section {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .about, .projects-content, .education-content, .experience-content, .certificates-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-item, .education-item, .experience-item, .certificates-item {
+        max-width: 100%;
+    }
+
+    .contact-content {
+        width: 100%;
+        padding: 0 20px;
+    }
 }
