@@ -1,0 +1,55 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-list-items {
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .projects-content,
+    .education-content,
+    .experience-content,
+    .certificates-content {
+        flex-direction: column;
+    }
+
+    .project-item,
+    .education-item,
+    .experience-item,
+    .certificate-item {
+        max-width: 100%;
+    }
+}
