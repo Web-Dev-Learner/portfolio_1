@@ -47,7 +47,6 @@
             <div class="intro-buttons">
                 <div style="display: flex; align-items: center; justify-content: space-between;">
                     <div style="flex: 1;">
-                        
                         <button class="btn common-btn" onclick="window.location.href='#contact'">Hire Me</button>
                         <button class="btn ghost-btn" onclick="window.open('path/to/your-resume.pdf', '_blank')">Get Resume</button>
                     </div>
@@ -118,14 +117,14 @@
         </div>
         <div class="education-content">
             <div class="education-item">
-                <h3>University Name</h3>
-                <p>Year: 2020 - 2024</p>
-                <p>CGPA: 8.5</p>
+                <h3>Meenakshi College Of Engineering</h3>
+                <p>Year: 2021 - 2025</p>
+                <p>CGPA: 8.8</p>
             </div>
             <div class="education-item">
-                <h3>High School Name</h3>
-                <p>Year: 2018 - 2020</p>
-                <p>CGPA: 9.0</p>
+                <h3>All Angels Matriculation Higher Sec School</h3>
+                <p>Year: 2019 - 2021</p>
+                <p>Percentage: 86.87%</p>
             </div>
         </div>
     </section>
@@ -157,46 +156,77 @@
             <h1 class="my-heading text-center">Certificates</h1>
         </div>
         <div class="certificates-content">
-            <div class="certificates-item">
-                <img src="./Images/certificate1.jpg" alt="Certificate 1 Image">
-                <h3>Certificate 1</h3>
-                <p>Certificate 1 description goes here. Explain the details of the certificate.</p>
-                <a href="https://certificate1-link.com" class="btn common-btn" target="_blank">View Certificate</a>
+            <div class="certificate-item">
+                <h3>Google UX Design</h3>
+                <p>Issuing Organization: Google</p>
+                <p>Issue Date: June 2023</p>
             </div>
-            <div class="certificates-item">
-                <img src="./Images/certificate2.jpg" alt="Certificate 2 Image">
-                <h3>Certificate 2</h3>
-                <p>Certificate 2 description goes here. Explain the details of the certificate.</p>
-                <a href="https://certificate2-link.com" class="btn common-btn" target="_blank">View Certificate</a>
+            <div class="certificate-item">
+                <h3>ReactJS - The Complete Guide</h3>
+                <p>Issuing Organization: Udemy</p>
+                <p>Issue Date: December 2023</p>
             </div>
+            <div class="certificate-item">
+                <h3>Python for Everybody</h3>
+                <p>Issuing Organization: Coursera</p>
+                <p>Issue Date: October 2023</p>
+            </div>
+            <div class="certificates-content">
+                <div class="certificate-item">
+                    <h3>Google UX Design</h3>
+                    <p>Issuing Organization: Google</p>
+                    <p>Issue Date: June 2023</p>
+                </div>
+                <div class="certificates-content">
+                    <div class="certificate-item">
+                        <h3>Google UX Design</h3>
+                        <p>Issuing Organization: Google</p>
+                        <p>Issue Date: June 2023</p>
+                    </div>
+                    <div class="certificates-content">
+                        <div class="certificate-item">
+                            <h3>Google UX Design</h3>
+                            <p>Issuing Organization: Google</p>
+                            <p>Issue Date: June 2023</p>
+                        </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Me Section -->
     <section class="contact" id="contact">
         <div class="contact-heading">
             <h1 class="my-heading text-center">Contact Me</h1>
         </div>
         <div class="contact-content">
-            <div class="contact-form">
-                <form action="path/to/your-form-handler" method="POST">
-                    <label for="name">Name:</label>
+            <form action="https://formspree.io/f/xqkgywdj" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
-                    <label for="email">Email:</label>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="message">Message:</label>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="btn common-btn">Send Message</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Email: <a href="mailto:shrinedhi@example.com">shrinedhi@example.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/shrinedhi" target="_blank">linkedin.com/in/shrinedhi</a></p>
-                <p>GitHub: <a href="https://github.com/Web-Dev-Learner" target="_blank">github.com/Web-Dev-Learner</a></p>
-            </div>
+                </div>
+                <button type="submit" class="btn common-btn">Send Message</button>
+            </form>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Shrinedhi.M.R. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/Web-Dev-Learner" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/shrinedhi-m-r/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/username" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
