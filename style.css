@@ -241,14 +241,27 @@ p {
     gap: 20px;
 }
 
-.certificates-item {
-    flex: 1;
+.certificate-item {
+    flex: 1 1 calc(33% - 40px);
     min-width: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.certificates-heading {
+    margin-bottom: 40px;
+}
+
+.certificates-heading h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 /* Contact section styles */
