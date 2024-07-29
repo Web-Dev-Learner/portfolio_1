@@ -60,8 +60,8 @@ body {
 }
 
 /* Hero section styles */
+/* Hero section styles */
 .hero {
-    
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -91,13 +91,13 @@ body {
 .intro-buttons {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center; /* Align items center vertically */
+    gap: 10px; /* Space between buttons */
 }
 
 .common-btn, .ghost-btn {
     padding: 10px 20px;
-    margin-left: 15px;
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -107,20 +107,24 @@ body {
     background-color: #ff4081;
     color: #fff;
     border: none;
-    margin-left: 40px;
-    padding-left: 40px;
 }
 
 .ghost-btn {
     background-color: transparent;
     color: #ff4081;
     border: 2px solid #ff4081;
-    
 }
 
 .common-btn:hover, .ghost-btn:hover {
     opacity: 0.8;
 }
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between the GIF and the buttons */
+}
+
 
 /* Section styles */
 section {
