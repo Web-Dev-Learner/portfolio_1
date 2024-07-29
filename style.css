@@ -97,6 +97,7 @@ body {
 
 .common-btn, .ghost-btn {
     padding: 10px 20px;
+    margin-left: 15px;
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -106,12 +107,15 @@ body {
     background-color: #ff4081;
     color: #fff;
     border: none;
+    margin-left: 40px;
+    padding-left: 40px;
 }
 
 .ghost-btn {
     background-color: transparent;
     color: #ff4081;
     border: 2px solid #ff4081;
+    
 }
 
 .common-btn:hover, .ghost-btn:hover {
@@ -170,7 +174,7 @@ p {
 
 .project-item {
     flex: 1;
-    min-width: 300px;
+    min-width: 500px;
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ddd;
