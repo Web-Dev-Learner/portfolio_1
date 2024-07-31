@@ -1,4 +1,4 @@
-/* Global styles */
+* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -339,3 +339,4 @@ p {
         padding: 0 20px;
     }
 }
+
